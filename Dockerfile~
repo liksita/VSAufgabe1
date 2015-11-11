@@ -1,0 +1,6 @@
+FROM java:8
+EXPOSE 4567
+ADD vsp_diana.jar /
+ADD startup.sh /
+CMD ["java","-jar","/vsp_diana.jar"]
+
