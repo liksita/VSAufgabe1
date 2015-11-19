@@ -6,25 +6,19 @@ import java.util.Random;
  * Created by diana on 01.11.15.
  */
 public class Dice {
-    private int number;
+    int number;
 
-    public Dice(){
+    public void roll() {
         Random rnd = new Random();
-        number = rnd.nextInt(6)+1;
+        number = rnd.nextInt(6) + 1;
     }
 
-    public int getNumber() {
+    int getNumber() {
         return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
     }
 
     @Override
     public String toString() {
-        return
-                "number: " + number
-                ;
+        return "number: " + number;
     }
 }
