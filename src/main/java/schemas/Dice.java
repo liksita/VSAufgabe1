@@ -1,4 +1,4 @@
-package restopoly;
+package schemas;
 
 import java.util.Random;
 
